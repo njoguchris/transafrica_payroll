@@ -1,0 +1,74 @@
+{
+ "actions": [],
+ "creation": "2022-10-06 12:21:10.973576",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "receipt_document_type",
+  "receipt_document",
+  "supplier",
+  "col_break1",
+  "transaction_date",
+  "grand_total"
+ ],
+ "fields": [
+  {
+   "fieldname": "receipt_document_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Order Document Type",
+   "options": "Purchase Order",
+   "reqd": 1
+  },
+  {
+   "fieldname": "receipt_document",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Order Document",
+   "oldfieldname": "purchase_receipt_no",
+   "oldfieldtype": "Link",
+   "options": "Purchase Order",
+   "print_width": "220px",
+   "reqd": 1,
+   "width": "220px"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Supplier",
+   "options": "Supplier",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col_break1",
+   "fieldtype": "Column Break",
+   "width": "50%"
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Grand Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "transaction_date",
+   "fieldtype": "Date",
+   "label": "Transaction Date",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2022-10-06 19:24:45.028917",
+ "modified_by": "Administrator",
+ "module": "Transafrica Payroll",
+ "name": "Budget Costing Purchase Order",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "ASC"
+}
